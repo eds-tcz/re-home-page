@@ -1,0 +1,898 @@
+
+.whats-tranding-container {
+    height: 680px;
+    overflow: hidden;
+    position: relative;
+    width: 100%
+}
+
+@media(max-width: 768px) {
+    .whats-tranding-container {
+        height:650px
+    }
+}
+
+.whats-tranding-container:before {
+    background: radial-gradient(20.32% 31.83% at 50% 31.77%,#5e4d35 0,rgba(0,0,0,.85) 100%);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.whats-tranding-container h1 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    line-height: 50px;
+    margin: 60px auto 40px;
+    max-width: 825pt;
+    position: relative
+}
+
+@media(max-width: 768px) {
+    .whats-tranding-container h1 {
+        font-size:24px;
+        margin: 40px auto;
+        width: 90%
+    }
+}
+
+.whats-tranding-container .whats-tranding-swiper {
+    height: 470px;
+    margin: 0 auto;
+    overflow: visible;
+    width: 100%
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: end!important;
+    -ms-flex-pack: end!important;
+    align-items: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-end!important;
+    -webkit-transition: none;
+    transition: none;
+    width: 300px
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide.swiper-slide-active {
+    -webkit-box-shadow: 0 15px 50px rgba(0,0,0,.2);
+    box-shadow: 0 15px 50px rgba(0,0,0,.2)
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide.swiper-slide-active .thumbnail-image {
+    display: none
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide.swiper-slide-active .trending-content-card,.whats-tranding-container .whats-tranding-swiper .swiper-slide:not(.swiper-slide-active) .thumbnail-image {
+    display: block
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide:not(.swiper-slide-active) .trending-content-card {
+    display: none
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide.swiper-slide-next,.whats-tranding-container .whats-tranding-swiper .swiper-slide.swiper-slide-prev {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: start!important;
+    -ms-flex-pack: start!important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-start!important
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide.swiper-slide-prev {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: end!important;
+    -ms-flex-pack: end!important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-end!important;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide.swiper-slide-next .thumbnail-image,.whats-tranding-container .whats-tranding-swiper .swiper-slide.swiper-slide-prev .thumbnail-image {
+    height: 100%;
+    max-height: 200px;
+    width: 100%
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide.swiper-slide-next img,.whats-tranding-container .whats-tranding-swiper .swiper-slide.swiper-slide-prev img {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide.swiper-slide .thumbnail-image {
+    text-align: center
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide img {
+    display: block;
+    height: 232px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide span {
+    display: inline-block;
+    margin-top: 20px
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide.changed,.whats-tranding-container .whats-tranding-swiper .swiper-slide.changing {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    user-select: none
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide.changing {
+    pointer-events: none;
+    -webkit-transition: all .3s;
+    transition: all .3s
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide.changed {
+    -webkit-transition: none;
+    transition: none
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide.changed.swiper-slide-active,.whats-tranding-container .whats-tranding-swiper .swiper-slide.changing.swiper-slide-active {
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide.swiper-slide-active~.changed,.whats-tranding-container .whats-tranding-swiper .swiper-slide.swiper-slide-active~.changing {
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px)
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide .changed .trending-content-card,.whats-tranding-container .whats-tranding-swiper .swiper-slide.changing .trending-content-card {
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide.changing .trending-content-card {
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s,-webkit-transform .3s
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide.changed .trending-content-card {
+    -webkit-transition: none;
+    transition: none
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide .thumbnail-image {
+    display: none;
+    height: 100%;
+    position: relative;
+    width: 100%
+}
+
+@media(max-width: 768px) {
+    .whats-tranding-container .whats-tranding-swiper .swiper-slide .thumbnail-image {
+        height:422px
+    }
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide .thumbnail-image img {
+    height: 100%;
+    width: 100%
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide .thumbnail-image:before {
+    background: linear-gradient(97.74deg,rgba(0,0,0,.729) 7.22%,rgba(0,0,0,.459) 101.29%,transparent 119.3%);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide .trending-content-card {
+    background-color: #282828;
+    display: none;
+    height: 100%;
+    height: 90%!important;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide .trending-content-card .card-image {
+    padding: 20px;
+    position: relative
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide .trending-content-card .card-image .bg-img {
+    position: relative;
+    width: 100%
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide .trending-content-card .card-image .bg-img :before {
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(6.69%,#000),color-stop(54.43%,rgba(0,0,0,.51)),color-stop(80.25%,transparent));
+    background: linear-gradient(0deg,#000 6.69%,rgba(0,0,0,.51) 54.43%,transparent 80.25%);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide .trending-content-card .card-image .overlay {
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(.69%,#000),color-stop(35.43%,transparent),color-stop(10.25%,transparent));
+    background: linear-gradient(0deg,#000 .69%,transparent 35.43%,transparent 0);
+    bottom: 18px;
+    left: 20px;
+    position: absolute;
+    right: 20px;
+    top: 0
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide .trending-content-card .card-image .logoimg {
+    height: 75pt;
+    left: 24px;
+    position: absolute;
+    top: 26px;
+    width: 75pt
+}
+
+@media(max-width: 768px) {
+    .whats-tranding-container .whats-tranding-swiper .swiper-slide .trending-content-card .card-image .logoimg {
+        display:none
+    }
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide .trending-content-card .card-title {
+    bottom: 19px;
+    color: #fff;
+    font-size: 34px;
+    font-weight: 500;
+    margin: 0;
+    padding: 20px;
+    position: absolute;
+    width: 100%!important
+}
+
+@media(max-width: 768px) {
+    .whats-tranding-container .whats-tranding-swiper .swiper-slide .trending-content-card .card-title {
+        display:none
+    }
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide .trending-content-card .card-description {
+    color: #fff;
+    font-size: 1pc;
+    letter-spacing: .84px;
+    margin: 20px 0 0;
+    padding: 0 20px
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide .trending-content-card .card-description p {
+    margin: 0
+}
+
+@media(max-width: 768px) {
+    .whats-tranding-container .whats-tranding-swiper .swiper-slide .trending-content-card .card-description {
+        font-size:9pt
+    }
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide .trending-content-card .cta-buttons {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: Montserrat;
+    font-weight: 700;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    position: absolute;
+    width: 100%
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide .trending-content-card .cta-buttons .viewfinanceoption {
+    background-color: transparent;
+    border: 1px solid #a7a7a7;
+    color: #fff;
+    font-size: 14px;
+    height: 56px;
+    width: 100%
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide .trending-content-card .cta-buttons .viewfinanceoption:hover {
+    background: transparent!important;
+    border: 1px solid #fff
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide .trending-content-card .cta-buttons .calculateEMI {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    background: linear-gradient(112.38deg,hsla(0,0%,100%,.5) -120.84%,hsla(0,0%,100%,.1) 79.67%);
+    border: none;
+    color: #daaa00;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    font-weight: 700;
+    gap: 8px;
+    height: 56px;
+    justify-content: center;
+    width: 100%
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide .trending-content-card .cta-buttons .calculateEMI:hover {
+    background: linear-gradient(104.31deg,hsla(0,0%,100%,.7) -84.21%,transparent 102.45%)
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide .trending-content-card .cta-buttons .calculateEMI:after {
+    background-image: url(clientlib-ridesmain/resources/images/GoldenArrow.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    display: inline-block;
+    height: 9pt;
+    width: 9pt
+}
+
+@media(max-width: 768px) {
+    .whats-tranding-container .whats-tranding-swiper .swiper-slide .trending-content-card .cta-buttons {
+        -webkit-box-orient:vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-slide .swiper-slide-shadow-left,.whats-tranding-container .whats-tranding-swiper .swiper-slide .swiper-slide-shadow-right {
+    background-image: none!important
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-pagination {
+    bottom: 40px
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-pagination-bullet {
+    background-color: hsla(0,0%,100%,.5);
+    border-radius: 0;
+    height: 3px;
+    width: 30px
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-pagination-bullet-active {
+    background-color: #fff;
+    width: 40px
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-button-next,.whats-tranding-container .whats-tranding-swiper .swiper-button-prev {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-backdrop-filter: blur(90px);
+    backdrop-filter: blur(90px);
+    background: transparent;
+    background: linear-gradient(112.38deg,hsla(0,0%,100%,.5) -120.84%,hsla(0,0%,100%,.1) 79.67%);
+    border: 1px solid #474747;
+    border-image-source: linear-gradient(131.33deg,hsla(0,0%,100%,.26) -34.97%,hsla(0,0%,100%,0) 114.31%);
+    border-radius: 50%;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 3pc;
+    justify-content: center;
+    -webkit-transition: background-color .3s,color .3s;
+    transition: background-color .3s,color .3s;
+    width: 3pc;
+    z-index: 2
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-button-next svg,.whats-tranding-container .whats-tranding-swiper .swiper-button-prev svg {
+    stroke-width: 3;
+    height: 24px;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+    width: 24px
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-button-next:active,.whats-tranding-container .whats-tranding-swiper .swiper-button-next:hover,.whats-tranding-container .whats-tranding-swiper .swiper-button-prev:active,.whats-tranding-container .whats-tranding-swiper .swiper-button-prev:hover {
+    border: 1px solid #888
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-button-next:active svg,.whats-tranding-container .whats-tranding-swiper .swiper-button-next:hover svg,.whats-tranding-container .whats-tranding-swiper .swiper-button-prev:active svg,.whats-tranding-container .whats-tranding-swiper .swiper-button-prev:hover svg {
+    color: #daaa00
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-button-next:after,.whats-tranding-container .whats-tranding-swiper .swiper-button-prev:after {
+    content: ""
+}
+
+@media(max-width: 768px) {
+    .whats-tranding-container .whats-tranding-swiper .swiper-button-next,.whats-tranding-container .whats-tranding-swiper .swiper-button-prev {
+        display:none
+    }
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-button-prev {
+    left: 27.5%;
+    top: 55%
+}
+
+.whats-tranding-container .whats-tranding-swiper .swiper-button-next {
+    right: 27.5%;
+    top: 55%
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob {
+    height: 440px;
+    margin: 0 auto;
+    overflow: visible;
+    width: 100%
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: end!important;
+    -ms-flex-pack: end!important;
+    align-items: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: flex-end!important;
+    -webkit-transition: none;
+    transition: none;
+    width: 300px
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide.swiper-slide-active {
+    -webkit-box-shadow: 0 15px 50px rgba(0,0,0,.2);
+    box-shadow: 0 15px 50px rgba(0,0,0,.2)
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide.swiper-slide-active .thumbnail-image {
+    display: none
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide.swiper-slide-active .trending-content-card {
+    display: block;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide:not(.swiper-slide-active) .thumbnail-image {
+    display: block
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide:not(.swiper-slide-active) .trending-content-card {
+    display: none
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .swiper-slide-next,.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .swiper-slide-prev {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: start!important;
+    -ms-flex-pack: start!important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-start!important
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .swiper-slide-prev {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: end!important;
+    -ms-flex-pack: end!important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-end!important;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .swiper-slide-next .thumbnail-image,.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .swiper-slide-prev .thumbnail-image {
+    height: 100%;
+    max-height: 10rem;
+    width: 100%
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .swiper-slide-next img,.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .swiper-slide-prev img {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .swiper-slide .thumbnail-image {
+    text-align: center
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .swiper-slide img {
+    display: block;
+    width: 100%
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .swiper-slide span {
+    display: inline-block;
+    margin-top: 20px
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .changed,.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .changing {
+    -webkit-transform: translateX(-75pt);
+    transform: translateX(-75pt);
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    user-select: none
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .changing {
+    pointer-events: none;
+    -webkit-transition: all .3s;
+    transition: all .3s
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .changed {
+    -webkit-transition: none;
+    transition: none
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .changed.swiper-slide-active,.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .changing.swiper-slide-active {
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .swiper-slide-active~.changed,.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .swiper-slide-active~.changing {
+    -webkit-transform: translateX(75pt);
+    transform: translateX(75pt)
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .changed .trending-content-card,.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .changing .trending-content-card {
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .changing .trending-content-card {
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s,-webkit-transform .3s
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .changed .trending-content-card {
+    -webkit-transition: none;
+    transition: none
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .changed.swiper-slide-active .trending-content-card,.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .changing.swiper-slide-active .trending-content-card {
+    -webkit-transform: scale(1.66);
+    transform: scale(1.66)
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .thumbnail-image {
+    display: none;
+    height: 100%;
+    position: relative;
+    width: 100%
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .thumbnail-image img {
+    height: 100%;
+    width: 100%
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .thumbnail-image:before {
+    background: linear-gradient(97.74deg,rgba(0,0,0,.729) 7.22%,rgba(0,0,0,.459) 101.29%,transparent 119.3%);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .trending-content-card {
+    background-color: #282828;
+    display: none;
+    height: 100%;
+    width: 100%
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .trending-content-card .card-image {
+    padding: 10px;
+    position: relative
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .trending-content-card .card-image img {
+    display: block;
+    height: 200px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .trending-content-card .card-image .overlay {
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(.69%,#000),color-stop(35.43%,transparent),color-stop(10.25%,transparent));
+    background: linear-gradient(0deg,#000 .69%,transparent 35.43%,transparent 0);
+    bottom: 9px;
+    left: 10px;
+    position: absolute;
+    right: 10px;
+    top: 0
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .trending-content-card .card-image .logoimg {
+    height: 75pt;
+    left: 24px;
+    position: absolute;
+    top: 26px;
+    width: 75pt
+}
+
+@media(max-width: 768px) {
+    .whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .trending-content-card .card-image .logoimg {
+        display:none
+    }
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .trending-content-card .card-title {
+    bottom: 0;
+    color: #fff;
+    font-size: 34px;
+    font-weight: 500;
+    margin: 0;
+    padding: 20px;
+    position: absolute;
+    width: 94%
+}
+
+@media(max-width: 768px) {
+    .whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .trending-content-card .card-title {
+        display:block;
+        font-size: 20px
+    }
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .trending-content-card .card-description {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 1pc;
+    font-weight: 400;
+    letter-spacing: .84px;
+    padding: 0 10px
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .trending-content-card .card-description p {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    line-height: 1.5;
+    margin: 0;
+    max-height: 4.5em;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+@media(max-width: 768px) {
+    .whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .trending-content-card .card-description {
+        font-size:9pt
+    }
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .trending-content-card .cta-buttons {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: Montserrat;
+    font-weight: 700;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px 10px;
+    position: absolute;
+    width: 100%
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .trending-content-card .cta-buttons .viewfinanceoption {
+    background-color: transparent;
+    border: 1px solid #a7a7a7;
+    color: #fff;
+    font-size: 14px!important;
+    height: 56px;
+    width: 100%
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .trending-content-card .cta-buttons .viewfinanceoption:hover {
+    background: linear-gradient(104.31deg,hsla(0,0%,100%,.7) -84.21%,transparent 102.45%)
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .trending-content-card .cta-buttons .calculateEMI {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    background: linear-gradient(112.38deg,hsla(0,0%,100%,.5) -120.84%,hsla(0,0%,100%,.1) 79.67%);
+    border: none;
+    color: #daaa00;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 14px!important;
+    font-weight: 500;
+    font-weight: 700;
+    gap: 8px;
+    height: 56px;
+    justify-content: center;
+    width: 100%
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .trending-content-card .cta-buttons .calculateEMI:hover {
+    background: linear-gradient(104.31deg,hsla(0,0%,100%,.7) -84.21%,transparent 102.45%)
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .trending-content-card .cta-buttons .calculateEMI:after {
+    background-image: url(clientlib-ridesmain/resources/images/GoldenArrow.svg);
+    content: "";
+    display: inline-block;
+    height: 10px;
+    width: 8px
+}
+
+@media(max-width: 768px) {
+    .whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .trending-content-card .cta-buttons {
+        -webkit-box-orient:vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .swiper-slide-shadow-left,.whats-tranding-container .whats-tranding-swiper-mob .swiper-slide .swiper-slide-shadow-right {
+    background-image: none!important
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-pagination {
+    bottom: 20px
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-pagination-bullet {
+    background-color: hsla(0,0%,100%,.5);
+    border-radius: 0;
+    height: 3px;
+    width: 30px
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-pagination-bullet-active {
+    background-color: #fff;
+    width: 40px
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-button-next,.whats-tranding-container .whats-tranding-swiper-mob .swiper-button-prev {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #474747;
+    border-radius: 50%;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 56px;
+    justify-content: center;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    width: 56px;
+    z-index: 2
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-button-next:hover,.whats-tranding-container .whats-tranding-swiper-mob .swiper-button-prev:hover {
+    scale: 1
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-button-next:after,.whats-tranding-container .whats-tranding-swiper-mob .swiper-button-prev:after {
+    content: ""
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-button-next svg,.whats-tranding-container .whats-tranding-swiper-mob .swiper-button-prev svg {
+    stroke-width: 3;
+    height: 24px;
+    width: 24px
+}
+
+@media(max-width: 768px) {
+    .whats-tranding-container .whats-tranding-swiper-mob .swiper-button-next,.whats-tranding-container .whats-tranding-swiper-mob .swiper-button-prev {
+        display:none
+    }
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-button-prev {
+    left: 28%;
+    top: 50%
+}
+
+.whats-tranding-container .whats-tranding-swiper-mob .swiper-button-next {
+    right: 28%;
+    top: 50%
+}
+
+.whats-trending-cmp-mobile {
+    display: none
+}
+
+@media(max-width: 768px) {
+    .whats-trending-cmp-mobile {
+        display:block
+    }
+}
+
+.whats-trending-cmp-desktop {
+    display: block
+}
+
+@media(max-width: 768px) {
+    .whats-trending-cmp-desktop {
+        display:none
+    }
+}

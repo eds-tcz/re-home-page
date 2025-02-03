@@ -1,0 +1,414 @@
+.motorcycletabs {
+    background: #181818
+}
+
+.motorcycletabs .bike-container {
+    margin: 0 auto;
+    max-width: 825pt;
+    overflow: hidden;
+    padding-bottom: 50px
+}
+
+@media(max-width: 768px) {
+    .motorcycletabs .bike-container {
+        width:90%
+    }
+}
+
+.motorcycletabs .bike-container .bike-container-title {
+    margin: 20px auto;
+    max-width: 825pt
+}
+
+@media(max-width: 768px) {
+    .motorcycletabs .bike-container .bike-container-title {
+        max-width:90%
+    }
+}
+
+.motorcycletabs .bike-container .bike-container-title h1 {
+    font-size: 40px;
+    font-weight: 700
+}
+
+@media(max-width: 768px) {
+    .motorcycletabs .bike-container .bike-container-title h1 {
+        font-size:28px
+    }
+}
+
+.motorcycletabs .title-container h1 {
+    font-size: 3pc;
+    letter-spacing: 1px;
+    line-height: 42px
+}
+
+@media(max-width: 768px) {
+    .motorcycletabs .title-container h1 {
+        font-size:24px
+    }
+}
+
+.motorcycletabs .nav-button.next:hover,.motorcycletabs .nav-button.prev:hover {
+    border: 1px solid #fff
+}
+
+.motorcycletabs .nav-button {
+    height: 40px;
+    width: 40px
+}
+
+.motorcycletabs .nav-button svg {
+    height: 20px;
+    width: 20px
+}
+
+.motorcycletabs .nav-button svg:hover {
+    color: #ff0;
+    height: 20px;
+    width: 20px
+}
+
+.motorcycletabs .nav-button:hover {
+    border: 1px solid #fff
+}
+
+.motorcycletabs .central-highlight {
+    background: radial-gradient(circle,hsla(0,0%,100%,.1) 0,transparent 26%,transparent 100%);
+    height: 100vh;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%,-45%);
+    transform: translate(-50%,-45%);
+    width: 100%
+}
+
+.motorcycletabs .model-name {
+    color: #fff;
+    font-family: GuardianSansXCond Regular;
+    font-size: 31px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center
+}
+
+.motorcycletabs .model-model {
+    font-family: Guardian Sans,sans-serif
+}
+
+.motorcycletabs .categories-container {
+    font-family: Montserrat,sans-serif;
+    margin-bottom: 20px;
+    position: relative
+}
+
+.motorcycletabs .categories-tabs {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    gap: 20px;
+    letter-spacing: .5px;
+    padding: 10px 0;
+    text-align: center;
+    -webkit-transition: -webkit-transform .3s ease;
+    transition: -webkit-transform .3s ease;
+    transition: transform .3s ease;
+    transition: transform .3s ease,-webkit-transform .3s ease
+}
+
+.motorcycletabs .cta-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center
+}
+
+.motorcycletabs .category-tab {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    color: #a6a6a6;
+    color: #cac8c8;
+    cursor: pointer;
+    font-family: Montserrat,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-weight: 600!important;
+    line-height: 30px;
+    opacity: .8;
+    opacity: 1;
+    padding: 10px 20px;
+    padding: 20px 0!important;
+    position: relative;
+    text-transform: uppercase;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    white-space: nowrap
+}
+
+@media(max-width: 768px) {
+    .motorcycletabs .category-tab {
+        font-size:14px
+    }
+}
+
+.motorcycletabs .know-more-cta {
+    color: red;
+    font-family: Montserrat,sans-serif;
+    font-size: 1pc;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    width: 100%
+}
+
+.motorcycletabs .category-tab.active {
+    color: #cac8c8;
+    opacity: 1
+}
+
+.motorcycletabs .models-swiper {
+    position: relative;
+    width: 100%
+}
+
+.motorcycletabs .model-slide {
+    cursor: pointer;
+    opacity: .5;
+    padding: 10px 30px;
+    text-align: center;
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+    width: auto!important
+}
+
+.motorcycletabs .model-slide.swiper-slide-active {
+    color: #fff;
+    font-weight: 700;
+    opacity: 1
+}
+
+.motorcycletabs .bike-display {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 25pc;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%
+}
+
+@media(max-width: 768px) {
+    .motorcycletabs .bike-display {
+        background-size:contain;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content
+    }
+}
+
+@media(max-width: 576px) {
+    .motorcycletabs .bike-display {
+        height:250px
+    }
+}
+
+.motorcycletabs .transparentButton {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    font-family: Montserrat,sans-serif;
+    font-size: 15px;
+    padding: 10px 50px;
+    text-align: center
+}
+
+.motorcycletabs .transparentButton:hover {
+    background-image: none;
+    border: 2px solid #fff;
+    -webkit-transition: all ease-in-outs .5s;
+    transition: all ease-in-outs .5s
+}
+
+@media(max-width: 768px) {
+    .motorcycletabs .transparentButton {
+        font-size:9pt;
+        padding: 15px
+    }
+}
+
+.motorcycletabs .goldenButton img {
+    height: 27px;
+    margin-left: 10px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    width: 27px
+}
+
+.motorcycletabs .button-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px
+}
+
+.motorcycletabs .goldenButton {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: linear-gradient(112.38deg,hsla(0,0%,100%,.5) -120.84%,hsla(0,0%,100%,.1) 79.67%);
+    border: none;
+    color: #daaa00;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: Montserrat,sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    padding: 9pt 50px;
+    text-align: center
+}
+
+.motorcycletabs .goldenButton:hover {
+    background: linear-gradient(104.31deg,hsla(0,0%,100%,.7) -84.21%,transparent 102.45%)
+}
+
+@media(max-width: 768px) {
+    .motorcycletabs .goldenButton {
+        font-size:9pt;
+        padding: 15px
+    }
+}
+
+.motorcycletabs .bike-image {
+    max-height: 100%;
+    max-width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease
+}
+
+.motorcycletabs .nav-button {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    -webkit-backdrop-filter: blur(90px);
+    backdrop-filter: blur(90px);
+    background: transparent;
+    background: linear-gradient(112.38deg,hsla(0,0%,100%,.5) -120.84%,hsla(0,0%,100%,.1) 79.67%);
+    border: 1px solid #474747;
+    border-image-source: linear-gradient(131.33deg,hsla(0,0%,100%,.26) -34.97%,hsla(0,0%,100%,0) 114.31%);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 56px;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 56px;
+    z-index: 10
+}
+
+.motorcycletabs .nav-button:hover {
+    border: 1px solid #888
+}
+
+.motorcycletabs .nav-button.prev {
+    -webkit-backdrop-filter: blur(22.7299995422px);
+    backdrop-filter: blur(22.7299995422px);
+    border: 1.23px solid;
+    border-image-source: linear-gradient(133.14deg,hsla(0,0%,100%,.33),hsla(0,0%,100%,.007) 84.07%);
+    -webkit-box-shadow: 5px 0 0 1pc #181818;
+    box-shadow: 5px 0 0 1pc #181818;
+    left: 0
+}
+
+.motorcycletabs .nav-button.prev img {
+    height: 20px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    width: 20px
+}
+
+@media(max-width: 768px) {
+    .motorcycletabs .nav-button.prev {
+        display:none
+    }
+}
+
+.motorcycletabs .nav-button.prev svg {
+    height: 20px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    width: 20px
+}
+
+.motorcycletabs .nav-button.prev svg:after {
+    background-color: #181818;
+    height: 20px;
+    width: 20px
+}
+
+.motorcycletabs .nav-button.next {
+    -webkit-backdrop-filter: blur(22.7299995422px);
+    backdrop-filter: blur(22.7299995422px);
+    border: 1.23px solid;
+    border-image-source: linear-gradient(133.14deg,hsla(0,0%,100%,.33),hsla(0,0%,100%,.007) 84.07%);
+    -webkit-box-shadow: 5px 0 0 1pc #181818;
+    box-shadow: 5px 0 0 1pc #181818;
+    right: 0
+}
+
+.motorcycletabs .nav-button.next svg {
+    height: 20px;
+    width: 20px
+}
+
+.motorcycletabs .nav-button.next:before {
+    background-color: #181818;
+    height: 20px;
+    width: 20px
+}
+
+@media(max-width: 768px) {
+    .motorcycletabs .nav-button.next {
+        display:none
+    }
+}
+
+.motorcycletabs .button-box {
+    gap: 25px!important
+}

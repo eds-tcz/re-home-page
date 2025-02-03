@@ -1,16 +1,16 @@
 import {
   buildBlock,
-  loadHeader,
-  loadFooter,
+  decorateBlocks,
   decorateButtons,
   decorateIcons,
   decorateSections,
-  decorateBlocks,
   decorateTemplateAndTheme,
-  waitForFirstImage,
+  loadCSS,
+  loadFooter,
+  loadHeader,
   loadSection,
   loadSections,
-  loadCSS,
+  waitForFirstImage,
 } from './aem.js';
 
 /**
@@ -67,6 +67,33 @@ export function decorateMain(main) {
   decorateBlocks(main);
 }
 
+function loadExternalResources(resources) {
+  return Promise.all(
+    resources.map(
+      (resource) =>
+        new Promise((resolve, reject) => {
+          let element;
+
+          if (resource.type === 'script') {
+            element = document.createElement('script');
+            element.src = resource.src;
+            // element.async = true;
+            element.onload = resolve;
+            element.onerror = reject;
+          } else if (resource.type === 'link') {
+            element = document.createElement('link');
+            element.href = resource.href;
+            element.rel = 'stylesheet';
+            element.onload = resolve;
+            element.onerror = reject;
+          }
+
+          document.head.appendChild(element);
+        })
+    )
+  );
+}
+
 /**
  * Loads everything needed to get to LCP.
  * @param {Element} doc The container element
@@ -88,6 +115,21 @@ async function loadEager(doc) {
     }
   } catch (e) {
     // do nothing
+  }
+
+  try {
+    loadExternalResources([
+      {
+        type: 'link',
+        href: 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css',
+      },
+      {
+        type: 'script',
+        src: 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js',
+      },
+    ])
+  } catch (error) {
+    
   }
 }
 

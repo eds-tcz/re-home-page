@@ -1,0 +1,210 @@
+
+.shop-section {
+    background-color: #181818;
+    padding: 4pc 0;
+    position: relative;
+    text-align: center
+}
+
+@media(max-width: 768px) {
+    .shop-section {
+        padding:20px 0;
+        text-align: left
+    }
+}
+
+.shop-section__title {
+    color: #ededed;
+    font-family: GuardianSansXCond Semibold;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 2%;
+    line-height: 52px;
+    margin: 0 0 40px
+}
+
+@media(max-width: 768px) {
+    .shop-section__title {
+        font-size:28px;
+        margin: 20px auto;
+        padding: 0;
+        width: 90%
+    }
+}
+
+.shop-section .shop-section-swiper {
+    padding: 20px!important
+}
+
+.shop-section__cards {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    justify-content: center
+}
+
+@media(max-width: 768px) {
+    .shop-section__cards {
+        -webkit-box-pack:start;
+        -ms-flex-pack: start;
+        gap: 0;
+        justify-content: flex-start
+    }
+}
+
+.shop-card,.shop-section__cards .swiper-slide {
+    width: 436px
+}
+
+.shop-card {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    align-items: center;
+    border: 1px solid #373737;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(240deg,#373737,#373737,#373737);
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 0;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    -webkit-transition: -webkit-transform .3s ease;
+    transition: -webkit-transform .3s ease;
+    transition: transform .3s ease;
+    transition: transform .3s ease,-webkit-transform .3s ease;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.shop-card:hover {
+    border-image-slice: 1;
+    border-image-source: linear-gradient(232deg,#fff,#191919,#fff)
+}
+
+@media(max-width: 768px) {
+    .shop-card {
+        width:100%
+    }
+}
+
+.shop-card__image-wrapper {
+    position: relative
+}
+
+.shop-card__image {
+    height: 408px!important;
+    margin: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    padding: 0;
+    width: 100%!important
+}
+
+.shop-card__image-overlay {
+    background: linear-gradient(357.08deg,#191818 9.99%,rgba(25,24,24,0) 72.64%);
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.shop-card__content {
+    background-color: #181818;
+    /* height: 250px!important; */
+    padding: 0 14px 23px;
+    text-align: center
+}
+
+.shop-card__title {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    color: #ededed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: Guardian Sans,sans-serif;
+    font-size: 2pc;
+    font-weight: 600;
+    height: 50px;
+    justify-content: center;
+    line-height: 1.2;
+    margin-top: -95px;
+    padding: 0 20px;
+    position: relative;
+    text-align: center
+}
+
+.shop-card__title:after,.shop-card__title:before {
+    -webkit-box-flex: 1;
+    background: #daaa00;
+    content: "";
+    -ms-flex: 1;
+    flex: 1;
+    height: 1px;
+    margin: 0 10px;
+    min-width: 50px
+}
+
+@media(max-width: 768px) {
+    .shop-card__title {
+        font-size:18px
+    }
+}
+
+.shop-card__description {
+    color: #a7a7a7;
+    font-family: Montserrat,sans-serif;
+    font-size: 1pc;
+    height: 50px;
+    margin-bottom: 36px;
+    margin-top: 20px;
+    position: relative
+}
+
+.shop-card-action__button {
+    border: 1px solid #cacaca;
+    margin: 0 auto;
+    padding: 18px 0;
+    width: 83%
+}
+
+.shop-card-action__button:hover {
+    background: transparent!important;
+    border: 1px solid #fff
+}
+
+.shop-card__button {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    color: #ededed !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: Montserrat,sans-serif;
+    font-size: 1pc;
+    font-weight: 700;
+    justify-content: center;
+    position: relative;
+    text-decoration: none
+}

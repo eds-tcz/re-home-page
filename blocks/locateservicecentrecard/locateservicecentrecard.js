@@ -16,7 +16,7 @@ export default function decorate(block) {
     divEl3.setAttribute('data-placeholder-text', 'false');
     const divEl4 = document.createElement('div');
     divEl4.setAttribute('class', 'locate-centre__card');
-    divEl4.setAttribute('data-href', 'https://stagecdn.royalenfield.com/content/royal-enfield/in/en/rides-revamp-pages/rides-detail-page.html');
+    divEl4.setAttribute('style', 'background-image: url("https://stagecdn.royalenfield.com/content/dam/royal-enfield/shotgun-650/banner/desktop/experience-the-shotgun-650.webp");');
     const divEl5 = document.createElement('div');
     divEl5.setAttribute('class', 'locate-centre__card-flex d-flex');
     const divEl6 = document.createElement('div');

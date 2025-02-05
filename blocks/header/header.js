@@ -1,48 +1,27 @@
 export default function decorate(block) {
-    const container = document.createElement('div');
-    container.setAttribute('class', 'container');
-    const divEl = document.createElement('div');
-    divEl.setAttribute('class', 'motoverse-banner');
-    const divEl2 = document.createElement('div');
-    divEl2.setAttribute('class', 'banner-container');
-    const divEl3 = document.createElement('div');
-    divEl3.setAttribute('class', 'banner-content');
-    const divEl4 = document.createElement('div');
-    divEl4.setAttribute('class', 'banner-logo');
-    const imgEl = document.createElement('img');
-    imgEl.setAttribute('src', 'https://stagecdn.royalenfield.com/content/dam/RE-Platform-Revamp/rides-landing-/stripelogo.png');
-    imgEl.setAttribute('alt', 'Motoverse Logo');
-    imgEl.setAttribute('class', 'logo-img');
-    imgEl.setAttribute('title', 'logo-img');
-    divEl4.append(imgEl);
-    divEl3.append(divEl4);
-    const h1El = document.createElement('h1');
-    h1El.setAttribute('class', 'event-title');
-    h1El.textContent = 'MOTOVERSE 2024! - 3 days of music, motorcycling, and mates in Goa.';
-    divEl3.append(h1El);
-    const aEl = document.createElement('a');
-    aEl.setAttribute('href', 'https://www.youtube.com/embed/dQw4w9WgXcQ');
-    aEl.setAttribute('class', 'watch-live-btn');
-    aEl.textContent = 'WATCH LIVE';
-    divEl3.append(aEl);
-    divEl2.append(divEl3);
-    const buttonEl = document.createElement('button');
-    buttonEl.setAttribute('class', 'close-hero-btn');
-    const svgEl = document.createElement('svg');
-    svgEl.setAttribute('viewBox', '0 0 24 24');
-    svgEl.setAttribute('fill', 'none');
-    svgEl.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
-    const pathEl = document.createElement('path');
-    pathEl.setAttribute('d', 'M18 6L6 18M6 6L18 18');
-    pathEl.setAttribute('stroke', '#FFFFFF');
-    pathEl.setAttribute('stroke-width', '2');
-    pathEl.setAttribute('stroke-linecap', 'round');
-    pathEl.setAttribute('stroke-linejoin', 'round');
-    svgEl.append(pathEl);
-    buttonEl.append(svgEl);
-    divEl2.append(buttonEl);
-    divEl.append(divEl2);
-    container.append(divEl);
-    block.textContent = '';
-    block.append(container);
+  [...block.children].forEach((row) => {
+    row.classList.add('header-cont');
+    [...row.children].forEach((div, d) => {
+      if (d === 0) {
+        div.classList.add('header-logo');
+      }
+      if (d === 1) {
+        div.classList.add('main-nav');
+        const ultag = div.querySelector('ul');
+        ultag.classList.add('header-nav-list');
+      }
+      if (d === 2) {
+        div.classList.add('action-container');
+        const ptag = div.querySelectorAll('p');
+        ptag.forEach((p, i) => {
+          if (i === 0) {
+            p.classList.add('btn-login');
+          }
+          if (i === 1) {
+            p.classList.add('search-icon');
+          }
+        });
+      }
+    });
+  });
 }

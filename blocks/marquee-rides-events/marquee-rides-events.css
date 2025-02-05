@@ -1,6 +1,10 @@
+.marquee-rides-events.block{
+    margin: auto;
+    max-width: 825pt;
+}
 
 .marquee-rides-events-container {
-    height: 572px
+    height: 572px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -32,7 +36,7 @@
 
 .marquee-rides-events-container .marquee-rides-header .marqee-rides-title .marquee-title {
     color: #ededed;
-    font-family: GuardianSansXCond Semibold;
+;
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 5px

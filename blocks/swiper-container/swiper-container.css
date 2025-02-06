@@ -193,24 +193,3 @@
         margin-top: 10px
     }
 }
-
-.motoverse-banner {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: #373737;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 68px;
-    position: absolute;
-    top: 72px;
-    width: 100%;
-    z-index: 2
-}
-
-@media(max-width: 768px) {
-    .motoverse-banner {
-        top:50px
-    }
-}

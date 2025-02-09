@@ -1,0 +1,257 @@
+
+@media only screen and (max-width: 600px) {
+    .news-and-media-container {
+        margin:20px
+    }
+}
+
+.news-and-media-container .marquee-title {
+    color: #ededed;
+    font-family: GuardianSansXCond Semibold;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 5px
+}
+
+@media(max-width: 768px) {
+    .news-and-media-container .marquee-title {
+        font-size:24px
+    }
+}
+
+.news-and-media-container .marquee-description {
+    color: #a7a7a7;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 700;
+    font-weight: 400;
+    margin-bottom: 2rem
+}
+
+.news-and-media-container .cmp--newsandmedia-swiper {
+    position: relative
+}
+
+.news-and-media-container .marquee-rides-events-card {
+    height: 430px!important;
+    position: relative!important
+}
+
+.news-and-media-container .marquee-rides-events-card img {
+    background-repeat: no-repeat;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%
+}
+
+.news-and-media-container .marquee-rides-events-card .status-banner {
+    background: #e5c34d;
+    border-radius: 0 0 4px 0;
+    color: #181818;
+    font-family: Montserrat;
+    font-size: 9pt;
+    font-weight: 600;
+    line-height: 16.8px;
+    margin: 0;
+    padding: 9px 11px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrape;
+    width: 134px
+}
+
+.news-and-media-container .marquee-rides-events-card .card-content-container {
+    bottom: 0;
+    color: #a6a6a6;
+    position: absolute;
+    width: 100%
+}
+
+.news-and-media-container .marquee-rides-events-card .card-content-container:before {
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(70.98%,rgba(0,0,0,.8)),to(rgba(33,33,33,0)));
+    background: linear-gradient(0deg,rgba(0,0,0,.8) 70.98%,rgba(33,33,33,0));
+    content: "";
+    inset: 0;
+    position: absolute
+}
+
+.news-and-media-container .marquee-rides-events-card .card-content-container .card-content {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+    position: relative;
+    width: 90%
+}
+
+@media only screen and (max-width: 600px) {
+    .news-and-media-container .marquee-rides-events-card .card-content-container .card-content {
+        width:80%
+    }
+}
+
+.news-and-media-container .marquee-rides-events-card .card-content-container .card-content .card-heading {
+    color: #ededed;
+    font-family: Montserrat;
+    font-size: 1pc;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0;
+    text-align: left
+}
+
+.news-and-media-container .marquee-rides-events-card .card-content-container .card-content .divider {
+    border: 1px solid #373737;
+    margin: 8px auto;
+    width: 100%
+}
+
+.news-and-media-container .marquee-rides-events-card .card-content-container .card-content .location {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: Montserrat;
+    font-size: 9pt;
+    font-weight: 500;
+    gap: 10px;
+    line-height: 16.8px;
+    margin: 10px 0;
+    text-align: left
+}
+
+.news-and-media-container .marquee-rides-events-card .card-content-container .card-content .location p {
+    margin: 0
+}
+
+.news-and-media-container .marquee-rides-events-card .card-content-container .card-content .location:before {
+    content: url(clientlib-ridesmain/resources/images/location.svg);
+    display: inline-block;
+    height: 9pt;
+    width: 9pt
+}
+
+.news-and-media-container .marquee-rides-events-card .card-content-container .card-content .date {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: Montserrat;
+    font-size: 9pt;
+    font-weight: 400;
+    gap: 10px;
+    line-height: 16.8px;
+    text-align: left
+}
+
+.news-and-media-container .marquee-rides-events-card .card-content-container .card-content .date:before {
+    content: url(clientlib-ridesmain/resources/images/date.svg);
+    display: inline-block;
+    height: 9pt;
+    width: 9pt
+}
+
+.news-and-media-container .marquee-rides-events-card .card-content-container .card-content .card-buttons .card-details-button {
+    border-radius: 50%;
+    color: #da291c;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 9pt;
+    font-weight: 700;
+    line-height: 16.8px;
+    text-align: left;
+    text-decoration: none
+}
+
+.news-and-media-container .marquee-rides-events-card .card-content-container .card-content .card-buttons .card-details-button:hover {
+    background: linear-gradient(104.31deg,hsla(0,0%,100%,.7) -84.21%,transparent 102.45%)
+}
+
+.news-and-media-container .marquee-rides-events-card .card-content-container .card-content .card-buttons .card-details-button:before {
+    background-image: url(clientlib-ridesmain/resources/images/newsandmediabutton.svg);
+    content: "";
+    display: inline-block;
+    height: 40px;
+    width: 40px
+}
+
+.news-and-media-container .marquee-rides-events-card .card-content-container .card-content .card-buttons .card-after-movie-button {
+    border: 1px solid #a7a7a7;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 9pt;
+    font-weight: 700;
+    line-height: 16.8px;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 215px;
+    width: 100%
+}
+
+.news-and-media-container .marquee-rides-events-card .card-content-container .card-content .card-buttons .card-after-movie-button:hover {
+    background-color: #fff;
+    color: #000
+}
+
+@media(max-width: 768px) {
+    .cmp--newsandmedia-swiper .swiper-horizontal {
+        height:494px
+    }
+}
+
+.cmp--newsandmedia-swiper .swiper-pagination {
+    position: absolute!important;
+    width: -webkit-fit-content!important;
+    width: -moz-fit-content!important;
+    width: fit-content!important
+}
+
+@media(max-width: 768px) {
+    .cmp--newsandmedia-swiper .swiper-pagination {
+        bottom:-21px!important
+    }
+}
+
+.cmp--newsandmedia-swiper .swiper-pagination-horizontal {
+    left: 40px;
+    position: absolute;
+    top: 370px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content
+}
+
+.cmp--newsandmedia-swiper .swiper-pagination-bullet {
+    background-color: hsla(0,0%,100%,.5);
+    border-radius: 0;
+    height: 3px;
+    width: 30px
+}
+
+.cmp--newsandmedia-swiper .swiper-pagination-bullet-active {
+    background-color: #fff;
+    width: 40px
+}
+
+.cmp--newsandmedia-swiper .cmp-carousel__actions,.cmp--newsandmedia-swiper .cmp-carousel__indicators,.cmp--newsandmedia-swiper .swiper-button-next,.cmp--newsandmedia-swiper .swiper-button-prev {
+    display: none
+}
+
+.newsandmedia-wrapper .container {
+    margin: 0 auto;
+    max-width: 825pt;
+    overflow: hidden
+}

@@ -446,7 +446,9 @@
 }
 
 .whats-tranding-container .whats-tranding-swiper .swiper-button-next:after,.whats-tranding-container .whats-tranding-swiper .swiper-button-prev:after {
-    content: ""
+    font-size: 18px;
+    left: -13px;
+    position: relative;
 }
 
 @media(max-width: 768px) {

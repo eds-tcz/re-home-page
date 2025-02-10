@@ -1,0 +1,123 @@
+.royal-enfield-tv .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 2.5rem;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.video-thumbnail {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.video-title {
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+}
+
+.video-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.live-indicator {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    height: 4px;
+    background-color: rgba(255,255,255,0.3);
+    position: relative;
+}
+
+.progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 70%;
+    background-color: #ff0000;
+}
+
+.video-stats {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0,0,0,0.6);
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.reactions {
+    /* position: absolute;
+    right: 20px;
+    bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; */
+    display: none;
+}
+
+.reaction {
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.settings-button {
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}

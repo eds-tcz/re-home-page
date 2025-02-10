@@ -1,6 +1,7 @@
 .locateservicecentrecard .cmp-container {
     margin: 0 auto;
     max-width: 825pt;
+    padding-bottom: 70px;
     overflow: hidden
 }
 

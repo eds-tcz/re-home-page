@@ -1,4 +1,93 @@
 
+.legacy .timeline-card {
+    background-color: #000;
+    margin: 0 auto;
+    position: relative;
+    width: 825pt
+}
+
+.legacy .timeline-card .timeline-image {
+    display: block;
+    height: 420px;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.legacy .timeline-card .timeline-image-mobile {
+    display: none
+}
+
+.legacy .timeline-card .timeline-content {
+    bottom: 1rem;
+    display: none;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    margin: 0 auto 0 20px;
+    position: absolute;
+    width: 60%
+}
+
+.legacy .timeline-card .timeline-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px
+}
+
+.legacy .timeline-card .timeline-content .read-more {
+    color: red;
+    cursor: pointer;
+    font-weight: 700
+}
+
+.legacy .timeline-card .timeline-content.active {
+    display: block!important;
+    -webkit-filter: none;
+    filter: none
+}
+
+.cmp--royalenfield--fixes-width h1 {
+    font-size: 40px
+}
+
+.cmp-bg-blue-container {
+    background: #181818;
+    padding-bottom: 60px
+}
+
+.cmp-bg-blue-container .cmp-button {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: linear-gradient(112.38deg,hsla(0,0%,100%,.5) -120.84%,hsla(0,0%,100%,.1) 79.67%);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: Montserrat,sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    justify-content: center;
+    padding: 9pt 90px;
+    position: relative;
+    text-align: center
+}
+
+.cmp-bg-blue-container .cmp-button:hover {
+    background: linear-gradient(104.31deg,hsla(0,0%,100%,.7) -84.21%,transparent 102.45%)
+}
+
+.cmp-bg-blue-container .button {
+    margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content
+}
+
 .swiper-container--legacy .swiper {
     height: 500px;
     max-width: 930pt;
@@ -192,4 +281,10 @@
         margin-left: 10px;
         margin-top: 10px
     }
+}
+
+.cmp--royalenfield--fixes-width .cmp-container {
+    margin: 0 auto;
+    max-width: 825pt;
+    overflow: hidden
 }

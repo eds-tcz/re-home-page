@@ -425,8 +425,8 @@ export default function decorate(block) {
 
     block.textContent = '';
     block.append(container);
-
     startCarousel();
+    
 }
 
 function startCarousel() {
@@ -559,7 +559,11 @@ function startCarousel() {
         });
 
         // Dispatch a resize event to ensure correct initial setup
-        window.dispatchEvent(new Event("resize"));
+        setTimeout(() => {
+
+            window.dispatchEvent(new Event("resize"));
+
+        }, 0    )
 
         // Fancybox.bind("[data-fancybox]", {
         //     //
@@ -567,4 +571,5 @@ function startCarousel() {
 
         // above here
     });
+    
 }

@@ -52,7 +52,7 @@ export default function decorate(block) {
         divEl8.setAttribute('class', 'card-content');
         const h3El = document.createElement('h3');
         h3El.setAttribute('class', 'card-heading');
-        h3El.textContent = 'Himalayan Odyssey 2023';
+        h3El.textContent = (mrq.querySelector("div:nth-child(2) > h2").innerText);
         divEl8.append(h3El);
         const divEl9 = document.createElement('div');
         divEl9.setAttribute('class', 'divider');
@@ -83,7 +83,7 @@ export default function decorate(block) {
         aEl2.setAttribute('redirection-type', 'open-in-browser');
         aEl2.setAttribute('data-href', 'https://stagecdn.royalenfield.com/content/royal-enfield/in/en/rides-revamp-pages/rides-detail-page.html');
         aEl2.setAttribute('target', '_blank');
-        aEl2.textContent = 'AFTER MOVIE';
+        aEl2.textContent = (mrq.querySelector("div:nth-child(2) > p > a").innerText);
         divEl12.append(aEl2);
         divEl8.append(divEl12);
         divEl7.append(divEl8);
@@ -92,7 +92,6 @@ export default function decorate(block) {
 
     })
 
-    divEl5.append(divEl20);
     divEl4.append(divEl5);
     const divEl27 = document.createElement('div');
     divEl27.setAttribute('class', 'swiper-pagination');

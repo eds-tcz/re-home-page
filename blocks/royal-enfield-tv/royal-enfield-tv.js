@@ -10,7 +10,7 @@ export default function decorate(block) {
     divEl.setAttribute('class', 'video-container');
 
     const imgEl = document.createElement('img');
-    imgEl.setAttribute('src', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/guerrilla-450/highlights/ergonomics.webp');
+    imgEl.setAttribute('src', block.querySelector(" div:nth-child(1) > picture > img").src );
     imgEl.setAttribute('alt', 'Motoverse 2023');
     imgEl.setAttribute('class', 'video-thumbnail');
     divEl.append(imgEl);
@@ -23,7 +23,7 @@ export default function decorate(block) {
 
     const h2El = document.createElement('h2');
     h2El.setAttribute('class', 'video-title');
-    h2El.textContent = 'Motoverse 2023 Main Event';
+    h2El.textContent = block.querySelector("div:nth-child(2) > h2").textContent;
     divEl3.append(h2El);
 
     const divEl4 = document.createElement('div');

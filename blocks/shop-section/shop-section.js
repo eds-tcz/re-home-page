@@ -11,13 +11,17 @@ export default function decorate(block) {
     divEl2.setAttribute('class', 'shop-section-swiper swiper');
     const divEl3 = document.createElement('div');
     divEl3.setAttribute('class', 'shop-section__cards swiper-wrapper');
+
+    [...block.children].forEach((shsc) => {
+        console.log(shsc);
+
     const divEl4 = document.createElement('div');
     divEl4.setAttribute('class', 'shop-card swiper-slide');
     const divEl5 = document.createElement('div');
     divEl5.setAttribute('class', 'shop-card__image-wrapper');
     const imgEl = document.createElement('img');
     imgEl.setAttribute('loading', 'lazy');
-    imgEl.setAttribute('src', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/bullet/gallery/thumbnail/new/gallery-thumbnail-1.webp');
+        imgEl.setAttribute('src', shsc.querySelector("div:nth-child(1) > picture > img").src);
     imgEl.setAttribute('alt', 'jvf');
     imgEl.setAttribute('class', 'shop-card__image');
     imgEl.setAttribute('title', 'shop-card__image');
@@ -31,12 +35,12 @@ export default function decorate(block) {
     const spanEl = document.createElement('span');
     const h3El = document.createElement('h3');
     h3El.setAttribute('class', 'shop-card__title');
-    h3El.textContent = 'Apparels';
+        h3El.textContent = (shsc.querySelector("div:nth-child(2) > h3").textContent);
     spanEl.append(h3El);
     divEl7.append(spanEl);
     const pEl = document.createElement('p');
     pEl.setAttribute('class', 'shop-card__description');
-    pEl.textContent = 'Wear the gear and ride on and enjoy .';
+        pEl.textContent = (shsc.querySelector("div:nth-child(2) > p").textContent);
     divEl7.append(pEl);
     const divEl8 = document.createElement('div');
     divEl8.setAttribute('class', 'shop-card-action__button');
@@ -46,51 +50,14 @@ export default function decorate(block) {
     aEl.setAttribute('target', '_blank');
     aEl.setAttribute('rel', 'nofollow');
     aEl.setAttribute('title', 'card-details-button');
-    aEl.textContent = 'SHOP ACCESSORIES';
+        aEl.textContent = (shsc.querySelector("div:nth-child(2) > p > a").textContent);
     divEl8.append(aEl);
     divEl7.append(divEl8);
     divEl4.append(divEl7);
     divEl3.append(divEl4);
-    const divEl9 = document.createElement('div');
-    divEl9.setAttribute('class', 'shop-card swiper-slide');
-    const divEl10 = document.createElement('div');
-    divEl10.setAttribute('class', 'shop-card__image-wrapper');
-    const imgEl2 = document.createElement('img');
-    imgEl2.setAttribute('loading', 'lazy');
-    imgEl2.setAttribute('src', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/shotgun-650/tout/desktop/apparel.webp');
-    imgEl2.setAttribute('alt', 'fjdf');
-    imgEl2.setAttribute('class', 'shop-card__image');
-    imgEl2.setAttribute('title', 'shop-card__image');
-    divEl10.append(imgEl2);
-    const divEl11 = document.createElement('div');
-    divEl11.setAttribute('class', 'shop-card__image-overlay');
-    divEl10.append(divEl11);
-    divEl9.append(divEl10);
-    const divEl12 = document.createElement('div');
-    divEl12.setAttribute('class', 'shop-card__content');
-    const spanEl2 = document.createElement('span');
-    const h3El2 = document.createElement('h3');
-    h3El2.setAttribute('class', 'shop-card__title');
-    h3El2.textContent = 'Accessories';
-    spanEl2.append(h3El2);
-    divEl12.append(spanEl2);
-    const pEl2 = document.createElement('p');
-    pEl2.setAttribute('class', 'shop-card__description');
-    pEl2.textContent = 'Arm your motorcycle and ride on.';
-    divEl12.append(pEl2);
-    const divEl13 = document.createElement('div');
-    divEl13.setAttribute('class', 'shop-card-action__button');
-    const aEl2 = document.createElement('a');
-    aEl2.setAttribute('href', 'https://stagecdn.royalenfield.com/in/en/rides-revamp-pages/rides-detail-page/');
-    aEl2.setAttribute('class', 'shop-card__button');
-    aEl2.setAttribute('target', '_blank');
-    aEl2.setAttribute('rel', 'nofollow');
-    aEl2.setAttribute('title', 'card-details-button');
-    aEl2.textContent = 'SHOP ACCESSORIES';
-    divEl13.append(aEl2);
-    divEl12.append(divEl13);
-    divEl9.append(divEl12);
-    divEl3.append(divEl9);
+
+})
+    
     divEl2.append(divEl3);
     divEl.append(divEl2);
     container.append(divEl);

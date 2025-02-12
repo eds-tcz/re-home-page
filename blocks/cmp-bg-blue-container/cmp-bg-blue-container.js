@@ -86,6 +86,9 @@ export default function decorate(block) {
     const divEl15 = document.createElement('div');
     divEl15.setAttribute('class', ' swiper-wrapper cmp-carousel__content');
 
+    [...block.children].forEach((swc) => {
+        console.log(swc);
+
     const divEl16 = document.createElement('div');
     divEl16.setAttribute('class', 'swiper-slide cmp-carousel__item cmp-carousel__item--active');
     divEl16.setAttribute('role', 'tabpanel');
@@ -109,7 +112,7 @@ export default function decorate(block) {
 
     const imgEl = document.createElement('img');
     imgEl.setAttribute('loading', 'lazy');
-    imgEl.setAttribute('src', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/guerrilla-450/banners/desktop/guerrilla-450-new.webp');
+    imgEl.setAttribute('srcset', swc.querySelector("div:nth-child(1) > picture > img").src);
     imgEl.setAttribute('title', 'legacy slide img');
     imgEl.setAttribute('alt', 'Royal Enfield 1901');
     imgEl.setAttribute('class', 'timeline-image');
@@ -117,7 +120,7 @@ export default function decorate(block) {
 
     const imgEl2 = document.createElement('img');
     imgEl2.setAttribute('loading', 'lazy');
-    imgEl2.setAttribute('src', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/guerrilla-450/banners/desktop/guerrilla-450-new.webp');
+    imgEl2.setAttribute('srcset', swc.querySelector("div:nth-child(1) > picture > img").src);
     imgEl2.setAttribute('title', 'legacy slide img');
     imgEl2.setAttribute('alt', 'Royal Enfield 1901');
     imgEl2.setAttribute('class', 'timeline-image-mobile');
@@ -127,12 +130,12 @@ export default function decorate(block) {
     divEl21.setAttribute('class', 'timeline-content');
 
     const pEl = document.createElement('p');
-    pEl.textContent = 'At the 1901 Stanley Cycle Show, the first Royal Enfield motor-powered cycles were showcased to the public. In November 2021, exactly 120 years later, a team of engineers from the ....';
+        pEl.textContent = (swc.querySelector("div:nth-child(2) > p").innerText);
     divEl21.append(pEl);
 
     const spanEl = document.createElement('span');
     spanEl.setAttribute('class', 'read-more');
-    spanEl.textContent = 'READ MORE';
+        spanEl.textContent = (swc.querySelector("div:nth-child(2) > p > a").innerText);
     divEl21.append(spanEl);
     divEl18.append(divEl21);
     divEl17.append(divEl18);
@@ -142,6 +145,8 @@ export default function decorate(block) {
     divEl17.append(scriptEl);
     divEl16.append(divEl17);
     divEl15.append(divEl16);
+
+    })
 
     const divEl22 = document.createElement('div');
     divEl22.setAttribute('class', 'swiper-slide cmp-carousel__item');

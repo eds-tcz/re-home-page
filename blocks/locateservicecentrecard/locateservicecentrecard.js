@@ -152,7 +152,7 @@ export default function decorate(block) {
     divEl2.append(sectionEl);
     const scriptEl = document.createElement('script');
     scriptEl.setAttribute('type', 'text/javascript');
-    scriptEl.setAttribute('src', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCb_eIYqj93ZiAqN5AQiyWWn4RsjXjlglQ&libraries=places&callback=Function.prototype');
+    scriptEl.setAttribute('src', '');
     divEl2.append(scriptEl);
     const scriptEl2 = document.createElement('script');
     scriptEl2.setAttribute('id', 'locateScript');

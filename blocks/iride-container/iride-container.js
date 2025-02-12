@@ -11,6 +11,10 @@ export default function decorate(block) {
     divEl2.setAttribute('class', 'iride-grid');
     const divEl3 = document.createElement('div');
     divEl3.setAttribute('class', 'iride-wrapper swiper-wrapper');
+
+    [...block.children].forEach((ird) => {
+        console.log(ird);
+
     const divEl4 = document.createElement('div');
     divEl4.setAttribute('class', 'swiper-slide grid-item ');
     const divEl5 = document.createElement('div');
@@ -18,24 +22,24 @@ export default function decorate(block) {
     const pictureEl = document.createElement('picture');
     const sourceEl = document.createElement('source');
     sourceEl.setAttribute('media', '(max-width: 799px)');
-    sourceEl.setAttribute('srcset', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/guerrilla-450/highlights/switch-modes.webp');
+    sourceEl.setAttribute('srcset',  ird.querySelector("div:nth-child(1) > picture > img").src);
     pictureEl.append(sourceEl);
     const sourceEl2 = document.createElement('source');
     sourceEl2.setAttribute('media', '(min-width: 800px)');
-    sourceEl2.setAttribute('srcset', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/guerrilla-450/highlights/switch-modes.webp');
+    sourceEl2.setAttribute('srcset', ird.querySelector("div:nth-child(1) > picture > img").src);
     pictureEl.append(sourceEl2);
     const imgEl = document.createElement('img');
-    imgEl.setAttribute('src', 'vfcc');
-    imgEl.setAttribute('alt', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/guerrilla-450/highlights/switch-modes.webp');
+        imgEl.setAttribute('srcset', ird.querySelector("div:nth-child(1) > picture > img").src);
+        imgEl.setAttribute('src', 'fedf') ;
     pictureEl.append(imgEl);
     divEl5.append(pictureEl);
     const divEl6 = document.createElement('div');
     divEl6.setAttribute('class', 'content');
     const h2El = document.createElement('h2');
-    h2El.textContent = 'Rides & Events';
+        h2El.textContent = (ird.querySelector("div:nth-child(2) > h2").innerText);
     divEl6.append(h2El);
     const pEl = document.createElement('p');
-    pEl.textContent = 'Take part in Royals Enfield’s Rides and Events';
+        pEl.textContent = (ird.querySelector("div:nth-child(2) > p").innerText);
     divEl6.append(pEl);
     const aEl = document.createElement('a');
     aEl.setAttribute('href', '/in/en/rides-revamp-pages/rides-detail-page/');
@@ -65,276 +69,10 @@ export default function decorate(block) {
     divEl5.append(divEl6);
     divEl4.append(divEl5);
     divEl3.append(divEl4);
-    const divEl7 = document.createElement('div');
-    divEl7.setAttribute('class', 'swiper-slide grid-item ');
-    const divEl8 = document.createElement('div');
-    divEl8.setAttribute('class', 'card');
-    const pictureEl2 = document.createElement('picture');
-    const sourceEl3 = document.createElement('source');
-    sourceEl3.setAttribute('media', '(max-width: 799px)');
-    sourceEl3.setAttribute('srcset', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/guerrilla-450/banners/wingman.webp');
-    pictureEl2.append(sourceEl3);
-    const sourceEl4 = document.createElement('source');
-    sourceEl4.setAttribute('media', '(min-width: 800px)');
-    sourceEl4.setAttribute('srcset', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/guerrilla-450/banners/wingman.webp');
-    pictureEl2.append(sourceEl4);
-    const imgEl2 = document.createElement('img');
-    imgEl2.setAttribute('src', 'vff');
-    imgEl2.setAttribute('alt', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/guerrilla-450/banners/wingman.webp');
-    pictureEl2.append(imgEl2);
-    divEl8.append(pictureEl2);
-    const divEl9 = document.createElement('div');
-    divEl9.setAttribute('class', 'content');
-    const h2El2 = document.createElement('h2');
-    h2El2.textContent = 'Discover Locations';
-    divEl9.append(h2El2);
-    const pEl2 = document.createElement('p');
-    pEl2.textContent = 'Take part in Royals Enfield’s Rides and Events';
-    divEl9.append(pEl2);
-    const aEl2 = document.createElement('a');
-    aEl2.setAttribute('href', '/in/en/rides-revamp-pages/rides-detail-page/');
-    aEl2.setAttribute('class', 'link-arrow');
-    aEl2.setAttribute('target', '_blank');
-    const svgEl2 = document.createElement('svg');
-    svgEl2.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
-    svgEl2.setAttribute('width', '24');
-    svgEl2.setAttribute('height', '24');
-    svgEl2.setAttribute('viewBox', '0 0 24 24');
-    svgEl2.setAttribute('fill', 'none');
-    svgEl2.setAttribute('stroke', 'currentColor');
-    svgEl2.setAttribute('stroke-width', '2');
-    svgEl2.setAttribute('stroke-linecap', 'round');
-    svgEl2.setAttribute('stroke-linejoin', 'round');
-    const lineEl2 = document.createElement('line');
-    lineEl2.setAttribute('x1', '5');
-    lineEl2.setAttribute('y1', '12');
-    lineEl2.setAttribute('x2', '19');
-    lineEl2.setAttribute('y2', '12');
-    svgEl2.append(lineEl2);
-    const polylineEl2 = document.createElement('polyline');
-    polylineEl2.setAttribute('points', '12 5 19 12 12 19');
-    svgEl2.append(polylineEl2);
-    aEl2.append(svgEl2);
-    divEl9.append(aEl2);
-    divEl8.append(divEl9);
-    divEl7.append(divEl8);
-    divEl3.append(divEl7);
-    const divEl10 = document.createElement('div');
-    divEl10.setAttribute('class', 'swiper-slide grid-item ');
-    const divEl11 = document.createElement('div');
-    divEl11.setAttribute('class', 'card');
-    const pictureEl3 = document.createElement('picture');
-    const sourceEl5 = document.createElement('source');
-    sourceEl5.setAttribute('media', '(max-width: 799px)');
-    sourceEl5.setAttribute('srcset', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/guerrilla-450/highlights/switch-modes.webp');
-    pictureEl3.append(sourceEl5);
-    const sourceEl6 = document.createElement('source');
-    sourceEl6.setAttribute('media', '(min-width: 800px)');
-    sourceEl6.setAttribute('srcset', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/guerrilla-450/highlights/switch-modes.webp');
-    pictureEl3.append(sourceEl6);
-    const imgEl3 = document.createElement('img');
-    imgEl3.setAttribute('src', 'vf');
-    imgEl3.setAttribute('alt', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/guerrilla-450/highlights/switch-modes.webp');
-    pictureEl3.append(imgEl3);
-    divEl11.append(pictureEl3);
-    const divEl12 = document.createElement('div');
-    divEl12.setAttribute('class', 'content');
-    const h2El3 = document.createElement('h2');
-    h2El3.textContent = 'Tours';
-    divEl12.append(h2El3);
-    const pEl3 = document.createElement('p');
-    pEl3.textContent = 'Take part in Royals Enfield’s Rides and Events';
-    divEl12.append(pEl3);
-    const aEl3 = document.createElement('a');
-    aEl3.setAttribute('href', '/in/en/rides-revamp-pages/rides-detail-page/');
-    aEl3.setAttribute('class', 'link-arrow');
-    aEl3.setAttribute('target', '_self');
-    const svgEl3 = document.createElement('svg');
-    svgEl3.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
-    svgEl3.setAttribute('width', '24');
-    svgEl3.setAttribute('height', '24');
-    svgEl3.setAttribute('viewBox', '0 0 24 24');
-    svgEl3.setAttribute('fill', 'none');
-    svgEl3.setAttribute('stroke', 'currentColor');
-    svgEl3.setAttribute('stroke-width', '2');
-    svgEl3.setAttribute('stroke-linecap', 'round');
-    svgEl3.setAttribute('stroke-linejoin', 'round');
-    const lineEl3 = document.createElement('line');
-    lineEl3.setAttribute('x1', '5');
-    lineEl3.setAttribute('y1', '12');
-    lineEl3.setAttribute('x2', '19');
-    lineEl3.setAttribute('y2', '12');
-    svgEl3.append(lineEl3);
-    const polylineEl3 = document.createElement('polyline');
-    polylineEl3.setAttribute('points', '12 5 19 12 12 19');
-    svgEl3.append(polylineEl3);
-    aEl3.append(svgEl3);
-    divEl12.append(aEl3);
-    divEl11.append(divEl12);
-    divEl10.append(divEl11);
-    divEl3.append(divEl10);
-    const divEl13 = document.createElement('div');
-    divEl13.setAttribute('class', 'swiper-slide grid-item ');
-    const divEl14 = document.createElement('div');
-    divEl14.setAttribute('class', 'card');
-    const pictureEl4 = document.createElement('picture');
-    const sourceEl7 = document.createElement('source');
-    sourceEl7.setAttribute('media', '(max-width: 799px)');
-    sourceEl7.setAttribute('srcset', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/guerrilla-450/highlights/ergonomics.webp');
-    pictureEl4.append(sourceEl7);
-    const sourceEl8 = document.createElement('source');
-    sourceEl8.setAttribute('media', '(min-width: 800px)');
-    sourceEl8.setAttribute('srcset', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/guerrilla-450/highlights/ergonomics.webp');
-    pictureEl4.append(sourceEl8);
-    const imgEl4 = document.createElement('img');
-    imgEl4.setAttribute('src', 'cfedf');
-    imgEl4.setAttribute('alt', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/guerrilla-450/highlights/ergonomics.webp');
-    pictureEl4.append(imgEl4);
-    divEl14.append(pictureEl4);
-    const divEl15 = document.createElement('div');
-    divEl15.setAttribute('class', 'content');
-    const h2El4 = document.createElement('h2');
-    h2El4.textContent = 'Rider Academy';
-    divEl15.append(h2El4);
-    const pEl4 = document.createElement('p');
-    pEl4.textContent = 'Take part in Royals Enfield’s Rides and Events';
-    divEl15.append(pEl4);
-    const aEl4 = document.createElement('a');
-    aEl4.setAttribute('href', '/in/en/rides-revamp-pages/rides-detail-page/');
-    aEl4.setAttribute('class', 'link-arrow');
-    aEl4.setAttribute('target', '_self');
-    const svgEl4 = document.createElement('svg');
-    svgEl4.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
-    svgEl4.setAttribute('width', '24');
-    svgEl4.setAttribute('height', '24');
-    svgEl4.setAttribute('viewBox', '0 0 24 24');
-    svgEl4.setAttribute('fill', 'none');
-    svgEl4.setAttribute('stroke', 'currentColor');
-    svgEl4.setAttribute('stroke-width', '2');
-    svgEl4.setAttribute('stroke-linecap', 'round');
-    svgEl4.setAttribute('stroke-linejoin', 'round');
-    const lineEl4 = document.createElement('line');
-    lineEl4.setAttribute('x1', '5');
-    lineEl4.setAttribute('y1', '12');
-    lineEl4.setAttribute('x2', '19');
-    lineEl4.setAttribute('y2', '12');
-    svgEl4.append(lineEl4);
-    const polylineEl4 = document.createElement('polyline');
-    polylineEl4.setAttribute('points', '12 5 19 12 12 19');
-    svgEl4.append(polylineEl4);
-    aEl4.append(svgEl4);
-    divEl15.append(aEl4);
-    divEl14.append(divEl15);
-    divEl13.append(divEl14);
-    divEl3.append(divEl13);
-    const divEl16 = document.createElement('div');
-    divEl16.setAttribute('class', 'swiper-slide grid-item ');
-    const divEl17 = document.createElement('div');
-    divEl17.setAttribute('class', 'card');
-    const pictureEl5 = document.createElement('picture');
-    const sourceEl9 = document.createElement('source');
-    sourceEl9.setAttribute('media', '(max-width: 799px)');
-    sourceEl9.setAttribute('srcset', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/guerrilla-450/highlights/tripper-dash.webp');
-    pictureEl5.append(sourceEl9);
-    const sourceEl10 = document.createElement('source');
-    sourceEl10.setAttribute('media', '(min-width: 800px)');
-    sourceEl10.setAttribute('srcset', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/guerrilla-450/banners/wingman.webp');
-    pictureEl5.append(sourceEl10);
-    const imgEl5 = document.createElement('img');
-    imgEl5.setAttribute('src', 'dc');
-    imgEl5.setAttribute('alt', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/guerrilla-450/banners/wingman.webp');
-    pictureEl5.append(imgEl5);
-    divEl17.append(pictureEl5);
-    const divEl18 = document.createElement('div');
-    divEl18.setAttribute('class', 'content');
-    const h2El5 = document.createElement('h2');
-    h2El5.textContent = 'Rentals';
-    divEl18.append(h2El5);
-    const pEl5 = document.createElement('p');
-    pEl5.textContent = 'Take part in Royals Enfield’s Rides and Events';
-    divEl18.append(pEl5);
-    const aEl5 = document.createElement('a');
-    aEl5.setAttribute('href', '/in/en/rides-revamp-pages/rides-detail-page/');
-    aEl5.setAttribute('class', 'link-arrow');
-    aEl5.setAttribute('target', '_self');
-    const svgEl5 = document.createElement('svg');
-    svgEl5.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
-    svgEl5.setAttribute('width', '24');
-    svgEl5.setAttribute('height', '24');
-    svgEl5.setAttribute('viewBox', '0 0 24 24');
-    svgEl5.setAttribute('fill', 'none');
-    svgEl5.setAttribute('stroke', 'currentColor');
-    svgEl5.setAttribute('stroke-width', '2');
-    svgEl5.setAttribute('stroke-linecap', 'round');
-    svgEl5.setAttribute('stroke-linejoin', 'round');
-    const lineEl5 = document.createElement('line');
-    lineEl5.setAttribute('x1', '5');
-    lineEl5.setAttribute('y1', '12');
-    lineEl5.setAttribute('x2', '19');
-    lineEl5.setAttribute('y2', '12');
-    svgEl5.append(lineEl5);
-    const polylineEl5 = document.createElement('polyline');
-    polylineEl5.setAttribute('points', '12 5 19 12 12 19');
-    svgEl5.append(polylineEl5);
-    aEl5.append(svgEl5);
-    divEl18.append(aEl5);
-    divEl17.append(divEl18);
-    divEl16.append(divEl17);
-    divEl3.append(divEl16);
-    const divEl19 = document.createElement('div');
-    divEl19.setAttribute('class', 'swiper-slide grid-item ');
-    const divEl20 = document.createElement('div');
-    divEl20.setAttribute('class', 'card');
-    const pictureEl6 = document.createElement('picture');
-    const sourceEl11 = document.createElement('source');
-    sourceEl11.setAttribute('media', '(max-width: 799px)');
-    sourceEl11.setAttribute('srcset', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/guerrilla-450/highlights/ergonomics.webp');
-    pictureEl6.append(sourceEl11);
-    const sourceEl12 = document.createElement('source');
-    sourceEl12.setAttribute('media', '(min-width: 800px)');
-    sourceEl12.setAttribute('srcset', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/guerrilla-450/highlights/ergonomics.webp');
-    pictureEl6.append(sourceEl12);
-    const imgEl6 = document.createElement('img');
-    imgEl6.setAttribute('src', 'fedf');
-    imgEl6.setAttribute('alt', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/guerrilla-450/highlights/ergonomics.webp');
-    pictureEl6.append(imgEl6);
-    divEl20.append(pictureEl6);
-    const divEl21 = document.createElement('div');
-    divEl21.setAttribute('class', 'content');
-    const h2El6 = document.createElement('h2');
-    h2El6.textContent = 'Experience';
-    divEl21.append(h2El6);
-    const pEl6 = document.createElement('p');
-    pEl6.textContent = 'Take part in Royals Enfield’s Rides and Events';
-    divEl21.append(pEl6);
-    const aEl6 = document.createElement('a');
-    aEl6.setAttribute('href', '/in/en/rides-revamp-pages/rides-detail-page/');
-    aEl6.setAttribute('class', 'link-arrow');
-    aEl6.setAttribute('target', '_self');
-    const svgEl6 = document.createElement('svg');
-    svgEl6.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
-    svgEl6.setAttribute('width', '24');
-    svgEl6.setAttribute('height', '24');
-    svgEl6.setAttribute('viewBox', '0 0 24 24');
-    svgEl6.setAttribute('fill', 'none');
-    svgEl6.setAttribute('stroke', 'currentColor');
-    svgEl6.setAttribute('stroke-width', '2');
-    svgEl6.setAttribute('stroke-linecap', 'round');
-    svgEl6.setAttribute('stroke-linejoin', 'round');
-    const lineEl6 = document.createElement('line');
-    lineEl6.setAttribute('x1', '5');
-    lineEl6.setAttribute('y1', '12');
-    lineEl6.setAttribute('x2', '19');
-    lineEl6.setAttribute('y2', '12');
-    svgEl6.append(lineEl6);
-    const polylineEl6 = document.createElement('polyline');
-    polylineEl6.setAttribute('points', '12 5 19 12 12 19');
-    svgEl6.append(polylineEl6);
-    aEl6.append(svgEl6);
-    divEl21.append(aEl6);
-    divEl20.append(divEl21);
-    divEl19.append(divEl20);
-    divEl3.append(divEl19);
+    
+    })
+
+    
     divEl2.append(divEl3);
     const divEl22 = document.createElement('div');
     divEl22.setAttribute('class', 'swiper-pagination');
@@ -343,4 +81,36 @@ export default function decorate(block) {
     container.append(divEl);
     block.textContent = '';
     block.append(container);
+    
+    startCarousel();
+}
+
+function startCarousel() {
+    const waitForSwiper = (callback) => (function checkSwiper() { window.Swiper ? callback() : setTimeout(checkSwiper, 100); })();
+
+    waitForSwiper(() => {
+        // after here 
+        const s = {
+            swiperInstance: null,
+            init: function () {
+                this.setupResponsiveBehavior(),
+                    window.addEventListener("resize", this.setupResponsiveBehavior.bind(this))
+            },
+            setupResponsiveBehavior: function () {
+                window.innerWidth <= 768 ? this.swiperInstance || (this.swiperInstance = new Swiper(".iride-grid", {
+                    direction: "horizontal",
+                    loop: !1,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: !0
+                    },
+                    effect: "slide",
+                    slidesPerView: 1.2,
+                    spaceBetween: 20
+                })) : this.swiperInstance && (this.swiperInstance.destroy(!0, !0),
+                    this.swiperInstance = null)
+            }
+        };
+        // above here
+    });
 }

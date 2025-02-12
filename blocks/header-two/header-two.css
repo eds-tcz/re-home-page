@@ -49,10 +49,28 @@
 .header-nav-list li {
   margin: 0 5px;
   display: flex;
+  position: relative;
   padding: 0px 30px;
+  align-items: center;
+
 }
 
- .header-nav-list li::after {
+.header-nav-list li > ul {
+  display: none;
+  position: absolute;
+  top: 26px;
+  background: #0a0a0a;
+}
+
+.header-nav-list li:hover > ul {
+  display: block;
+}
+
+.header-nav-list li > ul > li:hover {
+ color: red;
+}
+
+ .header-nav-list > li::after {
   content: '';
   width: 14px;
   height: 14px;
@@ -73,10 +91,13 @@
 
 .header-nav-list a {
   text-decoration: none;
-  color: #333;
-  font-size: 13.5px;
-  /* padding-top: 5px; */
+  color: #fff;
 }
+
+.header-nav-list a:hover {
+  color: red;
+}
+
 
 .action-container {
   align-items: center;

@@ -63,4 +63,45 @@ export default function decorate(block) {
     container.append(divEl);
     block.textContent = '';
     block.append(container);
+
+    startCarousel();
+}
+
+
+function startCarousel() {
+    const waitForSwiper = (callback) => (function checkSwiper() { window.Swiper ? callback() : setTimeout(checkSwiper, 100); })();
+
+    waitForSwiper(() => {
+        // after here 
+        "use strict";
+        (self.webpackChunkaem_maven_archetype = self.webpackChunkaem_maven_archetype || []).push([[361], {
+            5526: function (e, i, s) {
+                s.r(i);
+                const n = {
+                    swiperInstance: null,
+                    init: function () {
+                        this.setupResponsiveBehavior(),
+                            window.addEventListener("resize", this.setupResponsiveBehavior.bind(this))
+                    },
+                    setupResponsiveBehavior: function () {
+                        window.innerWidth <= 768 ? this.swiperInstance || (this.swiperInstance = new Swiper(".shop-section-swiper", {
+                            direction: "horizontal",
+                            loop: !1,
+                            pagination: {
+                                el: ".swiper-pagination",
+                                clickable: !0
+                            },
+                            effect: "slide",
+                            slidesPerView: 1.2,
+                            spaceBetween: 20
+                        })) : this.swiperInstance && (this.swiperInstance.destroy(!0, !0),
+                            this.swiperInstance = null)
+                    }
+                };
+                i.default = n
+            }
+        }]);
+
+        // above here
+    });
 }

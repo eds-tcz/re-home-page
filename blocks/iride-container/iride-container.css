@@ -243,7 +243,9 @@
     content: "";
     display: inline-block;
     height: 24px;
-    width: 24px
+    width: 24px;
+position: absolute;
+left: -6px;
 }
 
 .iride-container .iride-grid .grid-item .card .content .link-arrow:hover {
@@ -269,7 +271,8 @@
     transform: translateY(0);
     -webkit-transition-delay: .4s;
     transition-delay: .4s;
-    visibility: visible
+    visibility: visible;
+    
 }
 
 .iride-container .iride-grid .grid-item .card:hover .content .link-arrow {
@@ -278,7 +281,8 @@
     transform: translateY(0);
     -webkit-transition-delay: .5s;
     transition-delay: .5s;
-    visibility: visible
+    visibility: visible;
+    position: relative;
 }
 
 @media(max-width: 1024px) {

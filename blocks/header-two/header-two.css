@@ -60,6 +60,7 @@
   position: absolute;
   top: 26px;
   background: #0a0a0a;
+ padding: 10px 0;
 }
 
 .header-nav-list li:hover > ul {

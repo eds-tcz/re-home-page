@@ -293,7 +293,7 @@ export default function decorate(block) {
     const divEl45 = document.createElement('div');
     divEl45.setAttribute('class', 'nav-button prev');
     const imgEl = document.createElement('img');
-    imgEl.setAttribute('src', 'https://stagecdn.royalenfield.com/content/dam/motorcycle-pdp/campaign/leftImage.png');
+    imgEl.setAttribute('src', 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJtMTUgNmwtNiA2bDYgNiIvPjwvc3ZnPg==');
     divEl45.append(imgEl);
     divEl26.append(divEl45);
     const divEl46 = document.createElement('div');

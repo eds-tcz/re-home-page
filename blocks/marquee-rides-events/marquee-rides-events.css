@@ -197,7 +197,7 @@
 }
 
 .marquee-rides-events-card .card-content-container .card-content .location:before {
-    content: url("https://stagecdn.royalenfield.com/clientlib-ridesmain/resources/images/location.svg");
+    content: url("https://stagecdn.royalenfield.com/etc.clientlibs/RE-Platform-Revamp/clientlibs/clientlib-ridesmain/resources/images/location.svg");
     display: inline-block;
     height: 9pt;
     width: 9pt
@@ -219,7 +219,7 @@
 }
 
 .marquee-rides-events-card .card-content-container .card-content .date:before {
-    content: url("https://stagecdn.royalenfield.com/clientlib-ridesmain/resources/images/date.svg");
+    content: url("https://stagecdn.royalenfield.com/etc.clientlibs/RE-Platform-Revamp/clientlibs/clientlib-ridesmain/resources/images/date.svg");
     display: inline-block;
     height: 9pt;
     width: 9pt

@@ -73,7 +73,7 @@
 
  .header-nav-list > li::after {
   content: '';
-  width: 14px;
+  width: 15px;
   height: 14px;
   background-image: url("https://www.freeiconspng.com/thumbs/white-arrow-png/white-down-arrow-png-2.png");
   background-size: 26px;
@@ -119,3 +119,14 @@ font-size: 15px;
   height: 20px;
   cursor: pointer;
 }
+
+.header-nav-list li > ul > li{
+font-size: 14px;
+padding: 8px 30px;
+}
+
+.header-nav-list li:hover::after{
+  transform: rotate(180deg);
+}
+
+/* .header-nav-list > li::after */

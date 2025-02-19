@@ -54,7 +54,7 @@
 }
 @media (max-width: 767px) {
   .locate-centre__card {
-    padding: 30px 24px;
+    /* padding: 30px 24px; */
     margin: 0 -24px;
     min-height: 800px;
   }

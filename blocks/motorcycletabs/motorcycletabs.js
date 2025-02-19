@@ -107,7 +107,7 @@ export default function decorate(block) {
     divEl28.setAttribute('data-category', 'ROADSTER');
     divEl28.setAttribute('data-model', 'bullet-classics');
     divEl28.setAttribute('data-href', 'https://stagecdn.royalenfield.com/content/royal-enfield/in/en/rides-revamp-pages/rides-detail-page.html');
-    divEl28.setAttribute('data-image', 'https://stagecdn.royalenfield.com/content/dam/re-platform-images/cl350/colour/chestnut/left.png');
+    divEl28.setAttribute('data-image', '../../images/left.png');
     const spanEl = document.createElement('span');
     spanEl.setAttribute('class', 'model-name');
     spanEl.textContent = 'Bullet Classics';

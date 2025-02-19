@@ -35,7 +35,7 @@
 @media(max-width: 768px) {
     .whats-tranding-container h1 {
         font-size:24px;
-        margin: 40px auto;
+        margin: 0;
         width: 90%
     }
 }

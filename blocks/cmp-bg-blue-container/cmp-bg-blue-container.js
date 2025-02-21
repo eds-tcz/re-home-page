@@ -277,7 +277,7 @@ export default function decorate(block) {
 
     const imgEl7 = document.createElement('img');
     imgEl7.setAttribute('loading', 'lazy');
-    imgEl7.setAttribute('src', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/guerrilla-450/highlights/ergonomics.webp');
+    imgEl7.setAttribute('src', '../../images/ergonomics.webp');
     imgEl7.setAttribute('title', 'legacy slide img');
     imgEl7.setAttribute('alt', 'Royal Enfield 1901');
     imgEl7.setAttribute('class', 'timeline-image');
@@ -285,7 +285,7 @@ export default function decorate(block) {
 
     const imgEl8 = document.createElement('img');
     imgEl8.setAttribute('loading', 'lazy');
-    imgEl8.setAttribute('src', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/guerrilla-450/highlights/ergonomics.webp');
+    imgEl8.setAttribute('src', '../../images/ergonomics.webp');
     imgEl8.setAttribute('title', 'legacy slide img');
     imgEl8.setAttribute('alt', 'Royal Enfield 1901');
     imgEl8.setAttribute('class', 'timeline-image-mobile');

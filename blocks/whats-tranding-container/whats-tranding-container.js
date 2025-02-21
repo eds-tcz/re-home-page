@@ -252,7 +252,7 @@ export default function decorate(block) {
     divEl57.append(pictureEl16);
     const imgEl21 = document.createElement('img');
     imgEl21.setAttribute('class', 'logoimg');
-    imgEl21.setAttribute('src', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/hunter-350/hunter-350-og.png');
+    imgEl21.setAttribute('src', '../../images/hunter-350-og.png');
     imgEl21.setAttribute('alt', '');
     divEl57.append(imgEl21);
     const h3El8 = document.createElement('h3');

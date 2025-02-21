@@ -299,7 +299,7 @@ export default function decorate(block) {
     const divEl46 = document.createElement('div');
     divEl46.setAttribute('class', 'nav-button next');
     const imgEl2 = document.createElement('img');
-    imgEl2.setAttribute('src', 'https://stagecdn.royalenfield.com/content/dam/motorcycle-pdp/leftImage.png');
+    imgEl2.setAttribute('src', '../../images/leftImage.png');
     divEl46.append(imgEl2);
     divEl26.append(divEl46);
     divEl.append(divEl26);

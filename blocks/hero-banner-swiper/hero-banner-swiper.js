@@ -51,7 +51,7 @@ export default function decorate(block) {
         divEl7.setAttribute('class', 'hero-content');
         const imgEl2 = document.createElement('img');
         imgEl2.setAttribute('class', 'small-logo');
-        imgEl2.setAttribute('src', 'https://stagecdn.royalenfield.com/content/dam/RE-Platform-Revamp/rides-landing-/sm-logo-herobanner.png');
+        imgEl2.setAttribute('src', '../../images/sm-logo-herobanner.png');
         imgEl2.setAttribute('alt', 'logo img');
         imgEl2.setAttribute('title', 'small-logo');
         divEl7.append(imgEl2);
@@ -79,7 +79,7 @@ export default function decorate(block) {
         const divEl11 = document.createElement('div');
         divEl11.setAttribute('class', 'scroll-icon');
         const imgEl3 = document.createElement('img');
-        imgEl3.setAttribute('src', 'https://stagecdn.royalenfield.com/content/dam/RE-Platform-Revamp/rides-landing-/scroll_icon.png');
+        imgEl3.setAttribute('src', '../../images/scroll_icon.png');
         imgEl3.setAttribute('alt', 'scroll icon');
         imgEl3.setAttribute('title', 'scroll-icon');
         divEl11.append(imgEl3);

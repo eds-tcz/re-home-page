@@ -60,7 +60,7 @@ export default function decorate(block) {
         divEl9.append(pictureEl2);
         const imgEl3 = document.createElement('img');
         imgEl3.setAttribute('class', 'logoimg');
-        imgEl3.setAttribute('src', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/hunter-350/logo/hunter-350-logo.png');
+        imgEl3.setAttribute('src', '.././/images/hunter-350-logo.png');
         imgEl3.setAttribute('alt', '');
         divEl9.append(imgEl3);
         const h3El = document.createElement('h3');
@@ -182,7 +182,7 @@ export default function decorate(block) {
     divEl51.append(pictureEl14);
     const imgEl18 = document.createElement('img');
     imgEl18.setAttribute('class', 'logoimg');
-    imgEl18.setAttribute('src', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/hunter-350/logo/hunter-350-logo.png');
+    imgEl18.setAttribute('src', '.././/images/hunter-350-logo.png');
     imgEl18.setAttribute('alt', '');
     divEl51.append(imgEl18);
     const h3El7 = document.createElement('h3');
@@ -322,7 +322,7 @@ export default function decorate(block) {
     divEl63.append(pictureEl18);
     const imgEl24 = document.createElement('img');
     imgEl24.setAttribute('class', 'logoimg');
-    imgEl24.setAttribute('src', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/motorcycles/hunter-350/logo/hunter-350-logo.png');
+    imgEl24.setAttribute('src', '.././/images/hunter-350-logo.png');
     imgEl24.setAttribute('alt', '');
     divEl63.append(imgEl24);
     const h3El9 = document.createElement('h3');

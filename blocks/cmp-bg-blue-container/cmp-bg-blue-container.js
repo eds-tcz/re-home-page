@@ -171,7 +171,7 @@ export default function decorate(block) {
 
     const imgEl3 = document.createElement('img');
     imgEl3.setAttribute('loading', 'lazy');
-    imgEl3.setAttribute('src', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/shotgun-650/banner/desktop/experience-the-shotgun-650.webp');
+    imgEl3.setAttribute('src', '../../images/experience-the-shotgun-650.webp');
     imgEl3.setAttribute('title', 'legacy slide img');
     imgEl3.setAttribute('alt', 'Royal Enfield 1901');
     imgEl3.setAttribute('class', 'timeline-image');
@@ -179,7 +179,7 @@ export default function decorate(block) {
 
     const imgEl4 = document.createElement('img');
     imgEl4.setAttribute('loading', 'lazy');
-    imgEl4.setAttribute('src', 'https://stagecdn.royalenfield.com/content/dam/royal-enfield/shotgun-650/banner/desktop/experience-the-shotgun-650.webp');
+    imgEl4.setAttribute('src', '../../images/experience-the-shotgun-650.webp');
     imgEl4.setAttribute('title', 'legacy slide img');
     imgEl4.setAttribute('alt', 'Royal Enfield 1901');
     imgEl4.setAttribute('class', 'timeline-image-mobile');

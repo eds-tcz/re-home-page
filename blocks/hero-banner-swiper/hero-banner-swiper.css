@@ -323,3 +323,10 @@
 /* .hero-banner-swiper> .section > div{
     max-width: 100%;
 } */
+
+@media(max-width: 768px) {
+    .hero-banner-swiper
+    {
+        display: none;
+    }
+}

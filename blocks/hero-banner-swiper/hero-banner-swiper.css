@@ -324,9 +324,14 @@
     max-width: 100%;
 } */
 
-@media(max-width: 768px) {
+/* @media(max-width: 768px) {
     .hero-banner-swiper
     {
         display: none;
     }
+} */
+
+.hero-banner-swiper-container
+{
+    margin-top: 28% !important;
 }

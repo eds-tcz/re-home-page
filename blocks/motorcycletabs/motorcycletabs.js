@@ -118,7 +118,7 @@ export default function decorate(block) {
     divEl29.setAttribute('data-category', 'ROADSTER');
     divEl29.setAttribute('data-model', 'bullet-classics');
     divEl29.setAttribute('data-href', 'https://stagecdn.royalenfield.com/content/royal-enfield/in/en/rides-revamp-pages/rides-detail-page.html');
-    divEl29.setAttribute('data-image', 'https://stagecdn.royalenfield.com/content/dam/re-platform-images/TB-500-X/colour-bike-studio-shots/blue/Left.png');
+    divEl29.setAttribute('data-image', '../../images/left.png');
     const spanEl2 = document.createElement('span');
     spanEl2.setAttribute('class', 'model-name');
     spanEl2.textContent = 'Bullet Classics';

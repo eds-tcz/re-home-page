@@ -10,7 +10,7 @@ export default function decorate(block) {
   const divEl4 = document.createElement('div');
   divEl4.setAttribute('class', 'banner-logo');
   const imgEl = document.createElement('img');
-  imgEl.setAttribute('src', 'https://stagecdn.royalenfield.com/content/dam/RE-Platform-Revamp/rides-landing-/stripelogo.png');
+  imgEl.setAttribute('src', '../../images/stripelogo.png');
   imgEl.setAttribute('alt', 'Motoverse Logo');
   imgEl.setAttribute('class', 'logo-img');
   imgEl.setAttribute('title', 'logo-img');
